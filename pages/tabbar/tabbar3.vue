@@ -14,7 +14,7 @@
 					</view>
 					<view class="img">
 						<swiper class="swiper" indicator-dots="false" autoplay="true" :interval="item.interval" duration="1000" circular="true">
-							<swiper-item><image src="../../static/img/banner1.jpg"></image></swiper-item>
+							<swiper-item><image src ="../../static/img/banner1.jpg"></image></swiper-item>
 							<swiper-item><image src="../../static/img/banner2.jpg"></image></swiper-item>
 
 						</swiper>
