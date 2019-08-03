@@ -1,0 +1,1 @@
+<view class="grace-number-box"><view data-event-opts="{{[['tap',[['reduce',['$event']]]]]}}" class="doBtn" bindtap="__e">-</view><input type="number" disabled="{{disabled}}" data-event-opts="{{[['blur',[['blur',['$event']]]]]}}" value="{{inputNumber}}" bindblur="__e"/><view data-event-opts="{{[['tap',[['add',['$event']]]]]}}" class="doBtn" bindtap="__e">+</view></view>

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/tabbar/tabbar0",
+    "pages/tabbar/tabbar3",
+    "pages/product/product",
+    "pages/waterfall/waterfall",
+    "pages/tabbar/tabbar1",
+    "pages/serach/serach",
+    "pages/chaizhai/chaizhai",
+    "pages/checkId/checkId",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/tabbar/tabbar2",
+    "pages/tabbar/tabbar4"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/tabbar0",
+        "text": "商城",
+        "iconPath": "static/img/maichu.png",
+        "selectedIconPath": "static/img/maichuHL.png"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar1",
+        "text": "农场",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeHL.png"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar3",
+        "text": "体验店",
+        "iconPath": "static/img/liaotian.png",
+        "selectedIconPath": "static/img/liaotianHL.png"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar4",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/userHL.png"
+      }
+    ]
+  }
+}
