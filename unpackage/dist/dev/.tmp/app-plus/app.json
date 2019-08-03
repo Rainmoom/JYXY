@@ -13,6 +13,7 @@
     "pages/tabbar/tabbar2",
     "pages/tabbar/tabbar4"
   ],
+  "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#0faeff",
@@ -55,6 +56,6 @@
     "autoclose": true
   },
   "appname": "记忆小院",
-  "compilerVersion": "2.1.4",
+  "compilerVersion": "2.1.2",
   "usingComponents": {}
 }

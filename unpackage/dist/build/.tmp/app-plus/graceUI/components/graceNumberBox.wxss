@@ -1,0 +1,5 @@
+
+.grace-number-box{width:220rpx; height:65rpx; display:-webkit-box !important; display:-webkit-flex !important; display:-ms-flexbox !important; display:flex !important; overflow:hidden; -webkit-flex-wrap:nowrap; -ms-flex-wrap:nowrap; flex-wrap:nowrap;}
+.grace-number-box .doBtn{width:65rpx; line-height:60rpx; height:65rpx; text-align:center; font-size:50rpx; color:#333;}
+.grace-number-box input{display:block; width:90rpx !important; height:35rpx !important; line-height:35rpx !important; color:#333; padding:15rpx 0 !important; background:#F3F4F5;  text-align:center !important;}
+

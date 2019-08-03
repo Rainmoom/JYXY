@@ -4,8 +4,11 @@
     <head>
         <meta charset="UTF-8" />
         <script>
-            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
         </script>
         <title>View</title>
         <style>
@@ -17,11 +20,9 @@
             input[type="search"i]::-webkit-search-cancel-button {
                 display: none;
             }
-
         </style>
         <script>
-            var __wxConfig = {"debug":false,"appname":"记忆小院","entryPagePath":"pages/tabbar/tabbar0.html","page":{"pages/tabbar/tabbar0.html":{"window":{"usingComponents":{},"titleNView":false}},"pages/tabbar/tabbar3.html":{"window":{"usingComponents":{},"navigationBarTitleText":"体验店"}},"pages/product/product.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品"}},"pages/waterfall/waterfall.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品"}},"pages/tabbar/tabbar1.html":{"window":{"usingComponents":{},"navigationBarTitleText":"农场"}},"pages/serach/serach.html":{"window":{"usingComponents":{},"navigationBarTitleText":"搜索结果"}},"pages/chaizhai/chaizhai.html":{"window":{"usingComponents":{},"navigationBarTitleText":"采摘园"}},"pages/checkId/checkId.html":{"window":{"usingComponents":{},"navigationBarTitleText":"用户身份"}},"pages/register/register.html":{"window":{"usingComponents":{},"navigationBarTitleText":"注册"}},"pages/login/login.html":{"window":{"usingComponents":{},"navigationBarTitleText":"登录"}},"pages/tabbar/tabbar2.html":{"window":{"usingComponents":{},"navigationBarTitleText":"发布"}},"pages/tabbar/tabbar4.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的"}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#0faeff","backgroundColor":"#fbf9fe"}},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/tabbar/tabbar0.html","text":"商城","iconPath":"static/img/maichu.png","selectedIconPath":"static/img/maichuHL.png"},{"pagePath":"pages/tabbar/tabbar1.html","text":"农场","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/tabbar/tabbar3.html","text":"体验店","iconPath":"static/img/liaotian.png","selectedIconPath":"static/img/liaotianHL.png"},{"pagePath":"pages/tabbar/tabbar4.html","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/tabbar/tabbar0","pages/tabbar/tabbar3","pages/product/product","pages/waterfall/waterfall","pages/tabbar/tabbar1","pages/serach/serach","pages/chaizhai/chaizhai","pages/checkId/checkId","pages/register/register","pages/login/login","pages/tabbar/tabbar2","pages/tabbar/tabbar4"],"subPackages":[],"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":false,"autoclose":true},"compilerVersion":"1.9.4"}
-
+            var __wxConfig = {"debug":false,"appname":"记忆小院","entryPagePath":"pages/tabbar/tabbar0.html","page":{"pages/tabbar/tabbar0.html":{"window":{"titleNView":false,"usingComponents":{"grace-loading":"/graceUI/components/graceLoading"}}},"pages/tabbar/tabbar3.html":{"window":{"navigationBarTitleText":"体验店","usingComponents":{}}},"pages/product/product.html":{"window":{"navigationBarTitleText":"商品","usingComponents":{"grace-number-box":"/graceUI/components/graceNumberBox"}}},"pages/waterfall/waterfall.html":{"window":{"navigationBarTitleText":"商品","usingComponents":{"grace-loading":"/graceUI/components/graceLoading"}}},"pages/tabbar/tabbar1.html":{"window":{"navigationBarTitleText":"农场","usingComponents":{}}},"pages/serach/serach.html":{"window":{"navigationBarTitleText":"搜索结果","usingComponents":{}}},"pages/chaizhai/chaizhai.html":{"window":{"navigationBarTitleText":"采摘园","usingComponents":{}}},"pages/checkId/checkId.html":{"window":{"navigationBarTitleText":"用户身份","usingComponents":{}}},"pages/register/register.html":{"window":{"navigationBarTitleText":"注册","usingComponents":{"m-input":"/components/m-input"}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"登录","usingComponents":{"m-input":"/components/m-input"}}},"pages/tabbar/tabbar2.html":{"window":{"navigationBarTitleText":"发布","usingComponents":{}}},"pages/tabbar/tabbar4.html":{"window":{"navigationBarTitleText":"我的","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#0faeff","backgroundColor":"#fbf9fe"}},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/tabbar/tabbar0.html","text":"商城","iconPath":"static/img/maichu.png","selectedIconPath":"static/img/maichuHL.png"},{"pagePath":"pages/tabbar/tabbar1.html","text":"农场","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/tabbar/tabbar3.html","text":"体验店","iconPath":"static/img/liaotian.png","selectedIconPath":"static/img/liaotianHL.png"},{"pagePath":"pages/tabbar/tabbar4.html","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/tabbar/tabbar0","pages/tabbar/tabbar3","pages/product/product","pages/waterfall/waterfall","pages/tabbar/tabbar1","pages/serach/serach","pages/chaizhai/chaizhai","pages/checkId/checkId","pages/register/register","pages/login/login","pages/tabbar/tabbar2","pages/tabbar/tabbar4"],"subPackages":[],"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":false,"autoclose":true},"compilerVersion":"2.1.2","usingComponents":{}}
         </script>
         <script>
             var __id__ = '';
@@ -29,9 +30,22 @@
                 __id__ = page;
                 document.title = page;
                 // window.history.pushState('', '', page);
-                plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
             };
-
         </script>
         <script src="__uniappes6.js"></script>
         <script src="uniapp://ready"></script>

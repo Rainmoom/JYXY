@@ -1,11 +1,53 @@
 <template>
 	<view class="view">
 		<view class="caigou">
-			<view class="input">
-				<input placeholder="搜索" v-model="value" />
-				<view class="grace-iconfont icon-search"></view>
+			<view class="title">
+				<text>农场监控</text>
+			</view>
+			<view>
+				<image src="../../static/img/jiankong1.jpg" style="width: 680upx;height: 350upx;margin: 20upx;border-radius: 15upx;"></image>
 			</view>
 			<view class="title">
+				<text>农场1</text>
+			</view>
+			<view>
+				<video 
+						src="http://szpaasalihlsgw.lechange.cn:9001/LCO/5F015DBPAG8D8C2/0/0/20190801164101/dev_20190801164101_imm60ql48404e345.m3u8" 
+						poster="https://resource-public.oss-cn-hangzhou.aliyuncs.com/open/develop/source_1474275114783.png" 
+						  style="width: 680upx; height: 345upx;"
+						></video>
+			</view>
+			<view class="title">
+				<text>农场2</text>
+			</view>
+			<view>
+				<video 
+						src="http://szpaasalihlsgw.lechange.cn:9001/LCO/5F015DBPAG8D8C2/0/0/20190801164101/dev_20190801164101_imm60ql48404e345.m3u8" 
+						poster="https://resource-public.oss-cn-hangzhou.aliyuncs.com/open/develop/source_1474275114783.png" 
+						  style="width: 680upx; height: 345upx;"
+						></video>
+			</view>
+			<view class="title">
+				<text>农场3</text>
+			</view>
+			<view>
+				<video 
+						src="http://szpaasalihlsgw.lechange.cn:9001/LCO/5F015DBPAG8D8C2/0/0/20190801164101/dev_20190801164101_imm60ql48404e345.m3u8" 
+						poster="https://resource-public.oss-cn-hangzhou.aliyuncs.com/open/develop/source_1474275114783.png" 
+						  style="width: 680upx; height: 345upx;"
+						></video>
+			</view>
+			<view class="title">
+				<text>农场4</text>
+			</view>
+			<view>
+				<video 
+						src="http://szpaasalihlsgw.lechange.cn:9001/LCO/5F015DBPAG8D8C2/0/0/20190801164101/dev_20190801164101_imm60ql48404e345.m3u8" 
+						poster="https://resource-public.oss-cn-hangzhou.aliyuncs.com/open/develop/source_1474275114783.png" 
+						  style="width: 680upx; height: 345upx;"
+						></video>
+			</view>
+			<!-- <view class="title">
 				<text>采购需求</text>
 			</view>
 			<view class="check">
@@ -14,6 +56,10 @@
 				</view>
 			</view>
 			
+			<view class="input">
+				<input placeholder="搜索" v-model="value" />
+				<view class="grace-iconfont icon-search"></view>
+			</view>
 			<view class="list">
 				<view class="item" v-for="i in data" :key = 'i' style="border-bottom: 5upx rgb(230,230,230) solid;">
 					<view class="title" style="text-align: left;">{{i.name}}</view>
@@ -27,7 +73,7 @@
 						<text  style=" border-radius: 50upx; border:1upx #E2231A solid;background-color:#FFFFFF; font-size: 0.9rem; color: #E2231A;margin-right: 50upx;margin-bottom: 20upx;padding:10upx 20upx;">详谈</text>
 					</view>
 				</view>
-			</view>
+			</view> -->
 			
 		</view>
 	</view>
@@ -155,6 +201,12 @@
 		onShow() {
 		},
 		methods:{
+			statechange(e){
+            console.log('live-player code:', e.detail.code)
+			},
+			error(e){
+				console.error('live-player error:', e.detail.errMsg)
+			},
 			change:function(e)
 			{
 				this.checkData.forEach(e =>{

@@ -20,7 +20,7 @@
 				<view class="label" v-for="(row, index) in orderTypeLise" :key="row.name" hover-class="hover" @tap="toOrderType(index)">
 					<view class="icon">
 						<view class="badge" v-if="row.badge > 0">{{ row.badge }}</view>
-						<image :src="'../../../static/wode/' + row.icon"></image>
+						<image :src="'../../static/wode/' + row.icon"></image>
 					</view>
 					{{ row.name }}
 				</view>
@@ -28,7 +28,7 @@
 		</view>
 		<view class="list" v-for="(list, list_i) in severList" :key="list_i">
 			<view class="li" v-for="(li, li_i) in list" @tap="toPage(list_i, li_i)" v-bind:class="{ noborder: li_i == list.length - 1 }" hover-class="hover" :key="li.name">
-				<view class="icon"><image :src="'../../../static/wode/sever/' + li.icon"></image></view>
+				<view class="icon"><image :src="'../../static/wode/sever/' + li.icon"></image></view>
 				<view class="text">{{ li.name }}</view>
 				<image class="to" src="../../../static/wode/to.png"></image>
 			</view>

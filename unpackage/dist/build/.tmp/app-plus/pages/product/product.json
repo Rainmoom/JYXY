@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "商品"
+  "navigationBarTitleText": "商品",
+  "usingComponents": {
+    "grace-number-box": "/graceUI/components/graceNumberBox"
+  }
 }

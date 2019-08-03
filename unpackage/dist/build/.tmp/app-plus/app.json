@@ -19,7 +19,6 @@
     "navigationBarBackgroundColor": "#0faeff",
     "backgroundColor": "#fbf9fe"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#7a7e83",
     "selectedColor": "#0faeff",
@@ -51,10 +50,12 @@
       }
     ]
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": false,
     "autoclose": true
   },
   "appname": "记忆小院",
-  "compilerVersion": "1.9.4"
+  "compilerVersion": "2.1.2",
+  "usingComponents": {}
 }
